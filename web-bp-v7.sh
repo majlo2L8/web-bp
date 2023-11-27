@@ -81,7 +81,7 @@ fav_track() {
 read_log() {
 
   # GET lattest entries
-  mysql -u"admin" -p"parkour2" "SELECT rr.artist AS Artist, rr.release AS Release, rr.date AS Date, rr.label AS Label, rr.tracks AS Tracks, rr.URL AS URL FROM reg1.releses rr WHERE rr.user_id = ${USER_ID} AND rr.batch_id = ${actual_batch_id} ORDER BY rr.artist ASC;"
+  mysql -u"admin" -p"XXXXXXX" "SELECT rr.artist AS Artist, rr.release AS Release, rr.date AS Date, rr.label AS Label, rr.tracks AS Tracks, rr.URL AS URL FROM reg1.releses rr WHERE rr.user_id = ${USER_ID} AND rr.batch_id = ${actual_batch_id} ORDER BY rr.artist ASC;"
 
 }
 
